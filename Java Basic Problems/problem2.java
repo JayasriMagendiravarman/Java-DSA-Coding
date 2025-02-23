@@ -7,19 +7,22 @@
 //Triangle cannot be formed
 
 import java.util.Scanner;
-class problem2{
-    public static void main(String args[]){
-        int angle=0;
-        Scanner scan=new Scanner(System.in);
-        int angle1=scan.nextInt();
-        int angle2=scan.nextInt();
-        int angle3=scan.nextInt();
-        if(angle==180)
-        {
-            System.out.println("it forms a triangle");
-        }
-        else
-        {
+class Problem2 {
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+
+        // Taking input for three angles
+        int angle1 = scan.nextInt();
+        int angle2 = scan.nextInt();
+        int angle3 = scan.nextInt();
+
+        // Calculate the sum of angles
+        int angleSum = angle1 + angle2 + angle3;
+
+        // Check if the sum is 180
+        if (angleSum == 180) {
+            System.out.println("It forms a triangle");
+        } else {
             System.out.println("Triangle cannot be formed");
         }
     }
